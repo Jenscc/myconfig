@@ -1,0 +1,94 @@
+[aws]
+symbol = " "
+
+[battery]
+full_symbol = ""
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+[[battery.display]]  # 当电量在 0% 到 10% 时以 "bold red" 样式显示
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # 当电量在 10% 到 30% 时以 "bold yellow" 样式显示
+threshold = 30
+style = "bold yellow"
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[conda]
+symbol = " "
+
+[cmd_duration]
+min_time = 500
+format = "underwent [$duration](bold yellow)"
+
+[dart]
+symbol = " "
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+
+[docker]
+symbol = " "
+[docker_context]
+format = "via [  $context](blue bold)"
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
