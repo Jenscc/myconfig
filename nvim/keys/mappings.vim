@@ -1,6 +1,5 @@
 " Basic Key Mappings
 
-map <C-d> :wq<CR>
 imap <C-h> <C-w>h
 imap <C-j> <C-w>j
 imap <C-k> <C-w>k

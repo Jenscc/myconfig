@@ -31,7 +31,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ChristianChiarulli/vscode-easymotion'
     Plug 'machakann/vim-highlightedyank'
   else
-
+    " c-sharp
+    Plug 'OmniSharp/omnisharp-vim'
+    Plug 'ctrlpvim/ctrlp.vim' , { 'for': ['cs', 'vim-plug'] } " omnisharp-vim dependency
     " Easymotion
     Plug 'easymotion/vim-easymotion'
     " Surround
@@ -102,7 +104,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Swap windows
     Plug 'wesQ3/vim-windowswap'
     " Markdown Preview
-    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+    " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug']  }
+    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
     " Easily Create Gists
     Plug 'mattn/vim-gist'
     Plug 'mattn/webapi-vim'

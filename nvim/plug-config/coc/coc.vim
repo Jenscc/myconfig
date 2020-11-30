@@ -172,3 +172,6 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " add name
 let g:snips_author = 'Jens Chen'
+
+" Coc-explorer
+nmap <C-Z> :CocCommand explorer<CR>

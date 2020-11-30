@@ -18,7 +18,7 @@ func! CompileRunGcc()
 		exec "!time ./%<"
 	elseif &filetype == 'cpp'
 		set splitbelow
-		exec "!g++ -std=c++11 % -Wall -o %<"
+		exec "!g++ -std=c++11 % -o %<"
 		:sp
 		:res -15
 		:term ./%<
@@ -49,5 +49,9 @@ func! CompileRunGcc()
 		set splitbelow
 		:sp
 		:term go run .
-	endif
+    elseif &filetype == 'ruby'
+        set splitbelow
+        :sp
+        :term ruby %
+    endif
 endfunc
