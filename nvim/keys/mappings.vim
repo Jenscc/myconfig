@@ -47,7 +47,8 @@ else
   " Alternate way to save
   nnoremap <silent> <C-s> :w<CR>
   " Alternate way to quit
-  nnoremap <silent> <C-Q> :wq!<CR>
+  nnoremap <silent> <C-q> :wq!<CR>
+  nnoremap <silent> <C-Q> :q!<CR>
   " Use control-c instead of escape
   nnoremap <silent> <C-c> <Esc>
   " <TAB>: completion.
